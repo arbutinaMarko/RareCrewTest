@@ -1,0 +1,9 @@
+.container {
+  flex: 1 1 0;
+  width: calc(100vw / 2 - 32px);
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}

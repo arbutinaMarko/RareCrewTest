@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSharp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        iframe {
+            flex: 1 1 400px;
+            min-width: 300px;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Dashboard</h1>
+    <div class="container">
+        <iframe src="/api/timeentries/html" title="Employee Table"></iframe>
+        <iframe src="/api/timeentries/chart" title="Employee Pie Chart"></iframe>
+    </div>
+</body>
+</html>

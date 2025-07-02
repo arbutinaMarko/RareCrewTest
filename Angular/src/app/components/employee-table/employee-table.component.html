@@ -1,0 +1,21 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Total Time (hours)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let emp of employees"
+        [ngClass]="{ highlight: emp.totalTimeInMonth < 100 }"
+      >
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.totalTimeInMonth }}</td>
+        <td><a href="#">Edit</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
